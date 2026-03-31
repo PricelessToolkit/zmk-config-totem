@@ -20,9 +20,9 @@
 
         base {
             bindings = <
-           &kp Q  &kp W  &kp E  &kp R  &kp T    &kp Y      &kp U            &kp I          &kp O    &kp P
-           &kp A  &kp S  &kp D  &kp F  &kp G    &kp H      &kp J            &kp K          &kp L    &kp SEMI
-&kp LCTRL  &kp Z  &kp X  &kp C  &kp V  &kp B    &kp N      &kp M            &kp COMMA      &kp DOT  &kp FSLH  &kp BACKSPACE
+           &kp A  &kp Z  &kp E  &kp R  &kp T    &kp Y      &kp U            &kp I          &kp O    &kp P
+           &kp Q  &kp S  &kp D  &kp F  &kp G    &kp H      &kp J            &kp K          &kp L    &kp SEMI
+&kp LCTRL  &kp W  &kp X  &kp C  &kp V  &kp B    &kp N      &kp M            &kp COMMA      &kp DOT  &kp FSLH  &kp BACKSPACE
                          &mo 1  &mo 2  &mo 3    &kp SPACE  &kp RIGHT_SHIFT  &kp RIGHT_ALT
             >;
         };
@@ -55,12 +55,5 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        device {
-            if-layers = <1 2>;
-            then-layer = <3>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
